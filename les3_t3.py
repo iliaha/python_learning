@@ -1,16 +1,6 @@
 def my_func(arg1, arg2, arg3):
-    sum = 0
-    max1 = arg1
-    max2 = arg2
-    if arg3 > max2:
-        max2 = arg3
-    if arg3 > max1:
-        max1 = arg3
-    sum = max1 + max2
-    return sum
+    list = [arg1, arg2, arg3]
+    list.remove(min(arg1, arg2, arg3))
+    return sum(list)
 
-arg1 = float(input("Введите первое число: "))
-arg2 = float(input("Введите второе число: "))
-arg3 = float(input("Введите третье число: "))
-res = my_func(arg1, arg2, arg3)
-print(f"Результат работы: {res}")
+print(f'Результат работы: {my_func(float(input("Введите первое число: ")), float(input("Введите второе число: ")), float(input("Введите третье число: ")))}')
