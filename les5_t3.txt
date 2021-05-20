@@ -1,0 +1,5 @@
+Ivanov 25000
+Petrov 15000
+Sidorov 5000
+Chernov 30000
+Persikov 1200
