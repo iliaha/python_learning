@@ -4,7 +4,7 @@ class Matrix():
         self.matrix_data = matrix_data
 
     def __str__(self):
-        return '\n'.join(['\t'.join(map(str, el)) for el in self.matrix_data])
+        return '\n'.join(['\t'.join(str(k) for k in i) for i in self.matrix_data])
 
     def __add__(self, other):
         mat_sum = []
